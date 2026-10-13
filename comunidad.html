@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comunidad - Tecnologías Digitales</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .demo-container {
+            background-color: #f0f0f0;
+            position: relative;
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 150px;
+            border: 1px solid #ccc;
+        }
+        .caja-base {
+            width: 80px;
+            height: 80px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .caja-estatica {
+            position: static;
+            background-color: #e74c3c;
+        }
+        .caja-relativa {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: #2ecc71;
+        }
+        .caja-absoluta {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #f39c12;
+        }
+        .caja-fija {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #9b59b6;
+            z-index: 999;
+        }
+        .caja-pegajosa {
+            position: sticky;
+            top: 0;
+            background-color: #f1c40f;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header><img src="fondo.jpg"></header>
+    
+    <nav>    
+        <ul>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="#">Conoceme</a>
+                <ul>
+                    <li><a href="informacion.html">Informacion personal</a></li>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Segunda Parcial</a>
+                <ul>
+                    <li><a href="practica1.html">Práctica uno</a></li>
+                    <li><a href="posiciones.html">Práctica de posiciones</a></li>
+                    <li><a href="mundodigital.html">Mi mundo digital</a></li>
+                    <li><a href="comunidad.html">Comunidad</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tercera Parcial</a>
+                <ul>
+                    <li><a href="#">Práctica uno</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <!-- ASIDE PRINCIPAL -->
+        <aside class="principal">
+            <h2>Tecnologías Digitales en la Vida Cotidiana</h2>
+            <p>Las tecnologías digitales han transformado la forma en que nos comunicamos, trabajamos y aprendemos en el día a día.</p>
+            
+            <hr><br>
+
+            <!-- 1. TABLA CON LAS 4 TECNOLOGÍAS (table, tr, th, td) -->
+            <h3>Tabla Comparativa de Tecnologías</h3>
+            <table border="1" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                <thead>
+                    <tr style="background-color: #f0f0f0;">
+                        <th>Tecnología</th>
+                        <th>Uso Principal</th>
+                        <th>Ventaja</th>
+                        <th>Posible Riesgo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Smartphones</td>
+                        <td>Comunicación instantánea, gestión personal y navegación en internet.</td>
+                        <td>Acceso inmediato a la información desde cualquier lugar.</td>
+                        <td>Dependencia excesiva y distracciones continuas.</td>
+                    </tr>
+                    <tr>
+                        <td>Redes Sociales</td>
+                        <td>Interacción social, compartir contenido y entretenimiento.</td>
+                        <td>Conexión global con personas e instituciones.</td>
+                        <td>Riesgo de privacidad y exposición a desinformación.</td>
+                    </tr>
+                    <tr>
+                        <td>Plataformas de Streaming</td>
+                        <td>Consumo de contenidos de audio y video bajo demanda.</td>
+                        <td>Catálogo amplio y personalizado a cualquier hora.</td>
+                        <td>Sedentarismo y alto consumo de tiempo libre.</td>
+                    </tr>
+                    <tr>
+                        <td>Asistentes Virtuales (IA)</td>
+                        <td>Automatización de tareas cotidianas y comandos por voz.</td>
+                        <td>Mayor accesibilidad y optimización del tiempo.</td>
+                        <td>Posible vulneración de datos por escucha activa.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br><hr><br>
+
+            <!-- 2. GLOSARIO DE CONCEPTOS (dl, dt, dd) -->
+            <h3>Glosario de Conceptos Tecnológicos</h3>
+            <dl>
+                <dt><strong>Inteligencia Artificial (IA)</strong></dt>
+                <dd>Simulación de procesos de inteligencia humana por parte de sistemas informáticos como aprendizaje y razonamiento.</dd>
+
+                <dt><strong>Ciberseguridad</strong></dt>
+                <dd>Práctica de proteger sistemas, redes y datos personales frente a ataques digitales maliciosos.</dd>
+
+                <dt><strong>Computación en la Nube</strong></dt>
+                <dd>Servicios de almacenamiento, bases de datos y software accesibles a través de Internet sin necesidad de instalación local.</dd>
+            </dl>
+
+            <br><hr><br>
+
+            <!-- 3. VIDEO RELACIONADO (iframe) -->
+            <h3>Video sobre Tecnología Cotidiana</h3>
+            <p>Aprende más sobre el impacto de la tecnología en nuestra sociedad:</p>
+            <div style="text-align: center; margin-top: 10px;">
+                <iframe 
+                    width="100%" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="Video explicativo" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </aside>
+        
+        <!-- ASIDE SECUNDARIO -->
+        <aside class="secundario">
+            <h2>Datos de Interés</h2>
+            <p><b>Sabías que:</b></p>
+            <p>Más del 65% de la población mundial utiliza diariamente al menos dos dispositivos conectados a Internet.</p>
+            
+            <hr><br>
+
+            <p><b>Enlaces de interés:</b></p>
+            <ul>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+            </ul>
+        </aside>
+    </section>
+
+    <footer>
+        <img src="logobachi.png">
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programacion en Internet I</p>
+        </div>
+    </footer>
+</body>
+</html>
